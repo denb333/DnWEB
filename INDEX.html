@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA NANG CITY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+           <h2 class="logo">Travel</h2> 
+           <div class="toggle "></div>
+        </header>
+        <video muted loop autoplay>
+            <source src="./img/DN.mp4" type="video/mp4">
+         </video>
+         <div class="overlay"></div>
+        <div class="text">
+           <h2>Never Stopped</h2> 
+           <h3>Exploring The World</h3>
+           <p>Loren ipsum dolor sit amet consectetur adipisicing elit. Alias 
+               dolor vero expedita animi perspiciatis ispam dolorem obcaecati, facillis reprehenderit quas.
+           </p>
+           <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="./img/fb.jpg" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="./img/wt.jpg" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="./img/ig.jpg" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menutoggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menutoggle.addEventListener('click',() => {
+            menutoggle.classList.toggle('active')
+            showcase.classList.toggle('active');
+            
+        })
+    </script>
+</body>
+</html>
